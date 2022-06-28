@@ -1,27 +1,27 @@
-import { Title, Text, Anchor } from '@mantine/core';
+import { Title, Text } from '@mantine/core';
 import useStyles from './Welcome.styles';
 
 export function Welcome() {
-	const { classes } = useStyles();
+    const { classes } = useStyles();
 
-	return (
-		<>
-			<Title className={classes.title} align="center" mt={100}>
-				Welcome to{' '}
-				<Text inherit variant="gradient" component="span">
-					Pizza Planet!
-				</Text>
-			</Title>
-			<Text
-				color="dimmed"
-				align="center"
-				size="lg"
-				sx={{ maxWidth: 580 }}
-				mx="auto"
-				mt="xl"
-			>
-				Create, Edit, or Delete Orders!
-			</Text>
-		</>
-	);
+    return (
+        <>
+            <Title className={classes.title} align="center" mt={100}>
+                Welcome to{' '}
+                <Text inherit variant="gradient" component="span">
+                    Pizza Planet!
+                </Text>
+            </Title>
+            <Text
+                color="dimmed"
+                align="center"
+                size="lg"
+                sx={{ maxWidth: 580 }}
+                mx="auto"
+                mt="xl"
+            >
+                Create, Edit, or Delete Orders!
+            </Text>
+        </>
+    );
 }

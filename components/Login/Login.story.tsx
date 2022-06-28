@@ -1,7 +1,7 @@
 import { Login } from './Login';
 
 export default {
-	title: 'Login',
+    title: 'Login',
 };
 
 export const Usage = () => <Login />;
