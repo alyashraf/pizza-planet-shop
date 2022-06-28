@@ -1,13 +1,32 @@
-# Mantine Next Template
-
-Get started with Mantine + Next with just a few button clicks.
-Click `Use this template` button at the header of repository or [follow this link](https://github.com/mantinedev/mantine-next-template/generate) and
-create new repository with `@mantine` packages. Note that you have to be logged in to GitHub to generate template.
+# Pizza Planet Server Portal
 
 ## Features
+1. Login screen to accept a username (string) and password (string).
+  - Use the following to return an access token:
+  
+  ```json
+  { 
+    "password": "test",
+    "username": "test"
+  }
+  ```
+  
+2. User interface which allows the user to configure:
+  - Crust (string)
+  - Flavor (string)
+  - Size (string)
+  - Table_No (integer)
+3. Successfully submits the pizza configuration to the /orders endpoint.
+4. Display a successful confirmation to the user interface.
+5. Delete function that cancels an order.
+6. Ability to create more than one pizza order.
+7. Create a page that pulls a list of orders you created and displays them in the user interface.
+8. Search feature to allow the user to filter the returned orders.
+9. Containerize the application.
 
-This template comes with several essential features:
 
+### Code Features
+This codebase comes with (not all used, but for future usage):
 - Server side rendering setup for Mantine
 - Color scheme is stored in cookie to avoid color scheme mismatch after hydration
 - Storybook with color scheme toggle
